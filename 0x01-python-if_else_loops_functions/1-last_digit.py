@@ -10,4 +10,4 @@ elif i > 5:
     print("last digit of {:d} is {:d} and is greater than 5".format(number, i))
 
 elif i < 6:
-    print("last digit of {:d} is {:d} is less than 6 & not 0".format(number, i))
+    print("last digit of {:d} is {:d} is less than 6".format(number, i))
