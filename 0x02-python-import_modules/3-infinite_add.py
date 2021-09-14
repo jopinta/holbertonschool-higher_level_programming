@@ -6,6 +6,6 @@ if __name__ == "__main__":
 
     argc = len(sys.argv)
     add = 0
-    for j in range(1, argc):
-        add += int(sys.argv[j])
+        for j in range(1, argc):
+            add += int(sys.argv[j])
     print(add)
