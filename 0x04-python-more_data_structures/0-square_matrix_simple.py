@@ -10,6 +10,4 @@ def square_matrix_simple(matrix=[]):
             new_matrix[i].append(j)
             new_matrix[i][j] = matrix[i][j] ** 2
 
-    else:
-        raise Exception()
     return new_matrix
