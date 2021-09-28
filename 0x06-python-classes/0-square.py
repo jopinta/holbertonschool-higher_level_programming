@@ -1,5 +1,5 @@
 #!/usr/bin/pyton3
-"""docstring always used, in this case for a class to define a square"""
+"""emtpy class square class to define a square"""
 
 
 class Square:
