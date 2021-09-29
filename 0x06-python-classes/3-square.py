@@ -6,7 +6,7 @@ class Square:
     """defining a class squeare"""
     __size = None
 
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """init with attributte size"""
         if type(size) is int:
             if size >= 0:
