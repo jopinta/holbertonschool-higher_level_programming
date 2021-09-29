@@ -5,6 +5,6 @@
 class Square:
     __size = None
 
-    def __init__(size):
+    def __init__(self, size):
         """to initialize"""
         self.__size = size
