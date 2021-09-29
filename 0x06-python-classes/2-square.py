@@ -4,7 +4,7 @@
 
 class Square:
     """defining a class squeare"""
-    __size = None
+    __size = 
 
     def __init__(self, size=0):
         """initialize with attributte size"""
