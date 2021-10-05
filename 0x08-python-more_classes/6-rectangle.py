@@ -21,10 +21,6 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__width = width
         self.__height = height
-
-    def __del__(self):
-        """delete method"""
-        print("Bye rectangle...")
         Rectangle.number_of_instances += 1
 
     @property
@@ -65,18 +61,3 @@ class Rectangle:
             return 0
         else:
             return (self.__width * 2) + (self.__height * 2)
-
-    def __str__(self):
-        """Prints the rectangle using #"""
-        sq = ""
-        if self.__width != 0 and self.__height != 0:
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    sq += "#"
-                if i < self.__height - 1:
-                    sq += "\n"
-        return sq
-
-    def __repr__(self):
-        """Return rectangule"""
-        return "Rectangle({}, {})".format(self.__width, self.__height)
