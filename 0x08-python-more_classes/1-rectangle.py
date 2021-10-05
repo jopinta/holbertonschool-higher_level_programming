@@ -3,6 +3,7 @@
 based on 0-rectangle.py
 """
 
+
 class Rectangle:
     """new class"""
 
