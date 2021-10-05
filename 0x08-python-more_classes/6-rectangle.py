@@ -23,6 +23,11 @@ class Rectangle:
         self.__height = height
         Rectangle.number_of_instances += 1
 
+    def __del__(self):
+        """ Delete method """
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
+
     @property
     def height(self):
         """decorator, property height"""
