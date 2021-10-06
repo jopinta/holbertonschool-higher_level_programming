@@ -38,6 +38,9 @@ Traceback (most recent call last):
         ...
 TypeError: a must be an integer
 
-
+>>>add_integer(float(NaN), 7))
+Traceback (most recent call last):
+        ...
+TypeError: a must be an integer
 
 #==========================================
