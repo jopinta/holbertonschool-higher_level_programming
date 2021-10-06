@@ -1,0 +1,34 @@
+>>>print_square = __import__('4-print_square').print_square
+
+# prints a square
+
+# =============when positive===
+    >>>print_squeare(4)
+    ####
+    ####
+    ####
+    ####
+
+
+# ============== more than one paramter=================
+
+     >>>print_squeare(4)
+     Traceback (most recent call last):
+        ...
+        TypeError: only one argumen needed
+
+# ============negative integer================
+
+    >>> print_square(-2)
+    Traceback (most recent call last):
+        ...
+ValueError: size must be >= 0
+
+
+#=================== no argument===========
+    >>> print_square()
+     Traceback (most recent call last):
+        ...
+    TypeError: one agument required
+
+#=============================000

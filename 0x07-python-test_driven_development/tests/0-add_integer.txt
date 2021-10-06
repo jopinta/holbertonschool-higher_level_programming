@@ -1,0 +1,43 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+#to add integers or float:
+
+#===========test values========
+
+#integers addition
+>>> add_integer(1, 2)
+3
+
+#floats additions
+>>> add_integer(1.0, 2.0)
+3
+
+#mixed addition
+>>> add_integer(1, 4.0)
+5
+
+
+
+#====test non integer values=====
+
+# a is string plus integer
+>>> add_integer("hello", 40)
+Traceback (most recent call last):
+        ...
+TypeError: a must be an integer
+
+# b is string plus integer
+>>> add_integer(1, "betty")
+Traceback (most recent call last):
+        ...
+TypeError: b must be an integer
+
+# list type parameters
+>>> add_integer([2,4,6], 8)
+Traceback (most recent call last):
+        ...
+TypeError: a must be an integer
+
+
+
+#==========================================
