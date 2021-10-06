@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """a and b must be integers or floats, otherwise raise"""
 
+
 def add_integer(a, b=98):
     """ function that adds 2 integers"""
 
