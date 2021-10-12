@@ -1,0 +1,29 @@
+>>>MyList = __import__('1-my_list').MyList
+
+# integers
+
+>>>my_list.append(1)
+>>>my_list.append(4)
+>>>my_list.append(2)
+>>>my_list.append(3)
+>>>my_list.append(5)
+[1, 4, 2, 3, 5]
+
+# with negatives
+
+>>>my_list.append(-1)
+>>>my_list.append(4)
+>>>my_list.append(2)
+>>>my_list.append(3)
+>>>my_list.append(-5)
+[-1, 4, 2, 3, -5]
+
+# sorted
+
+>>>my_list.append(1)
+>>>my_list.append(4)
+>>>my_list.append(2)
+>>>my_list.append(3)
+>>>my_list.append(5)
+[1, 2, 3, 4, 5]
+
