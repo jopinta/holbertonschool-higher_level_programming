@@ -2,6 +2,7 @@
 """not allowed to import any module
 """
 
+
 def append_write(filename="", text=""):
     """append a string at the end of text file
 """
