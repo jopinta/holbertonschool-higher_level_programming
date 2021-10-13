@@ -1,5 +1,6 @@
 >>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+>>> bg = BaseGeometry()
 
 # integer integer
 
@@ -28,3 +29,18 @@
 Traceback (most recent call last):
         ...
 TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+#negative
+
+>>> bg.integer_validator("ree", -4)
+Traceback (most recent call last):
+        ...
+ValueError: ree must be greater than 0
+
+
+#float
+
+>>> bg.integer_validator("mi", 7.342)
+Traceback (most recent call last):
+        ...
+TypeError: mi must be an integer
