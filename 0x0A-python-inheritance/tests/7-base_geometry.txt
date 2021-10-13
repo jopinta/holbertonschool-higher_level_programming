@@ -1,6 +1,9 @@
->>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 >>> bg = BaseGeometry()
+
+
+
 >>> bg.area()
         Traceback (most recent call last):
         ...
@@ -16,6 +19,9 @@
 
 >>>bg = BaseGeometry()
 >>>bg.integer_validator("width", 89)
+Traceback (most recent call last):
+        ...
+        SyntaxError: EOL while scanning string literal
 
 #string string
 
@@ -36,7 +42,7 @@ TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 #negative
 
->>> bg.integer_validator("ree", -4)
+>>> bg.integer_validator("distance", -4)
 Traceback (most recent call last):
         ...
 ValueError: ree must be greater than 0
