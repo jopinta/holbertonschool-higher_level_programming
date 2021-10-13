@@ -2,6 +2,7 @@
 """not allowed to import any module
 """
 
+
 def write_file(filename="", text=""):
     """writes a string to a text file
 """
