@@ -1,0 +1,30 @@
+>>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+# integer integer
+
+>>>bg = BaseGeometry()
+>>>bg.integer_validator(12, 12)
+
+
+# string integer
+
+>>>bg = BaseGeometry()
+>>>bg.integer_validator("width", 89)
+
+#string string
+
+>>>bg = BaseGeometry()
+>>>bg.integer_validator("name", "John")
+ Traceback (most recent call last):
+        ...
+        TypeError: name must be an integer
+
+
+# string
+
+>>>bg = BaseGeometry()
+>>>bg.integer_validator("name")
+Traceback (most recent call last):
+        ...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
