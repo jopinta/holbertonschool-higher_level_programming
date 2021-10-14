@@ -1,29 +1,45 @@
->>>MyList = __import__('1-my_list').MyList
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList([4, 3, 2, 1])
 
-# integers
+Correct Output:
+>>> my_list.print_sorted()
+[1, 2, 3, 4]
 
->>>my_list.append(1)
->>>my_list.append(4)
->>>my_list.append(2)
->>>my_list.append(3)
->>>my_list.append(5)
-[1, 4, 2, 3, 5]
+No argument passed:
+>>> my_list = MyList(None)
+Traceback (most recent call last):
+...
+TypeError: 'NoneType' object is not iterable
 
-# with negatives
+Checking for module docstring:
+>>> m = __import__('1-my_list').__doc__
+>>> len(m) > 1
+True
 
->>>my_list.append(-1)
->>>my_list.append(4)
->>>my_list.append(2)
->>>my_list.append(3)
->>>my_list.append(-5)
-[-1, 4, 2, 3, -5]
+Checking for function docstring:
+>>> f = __import__('1-my_list').MyList.__doc__
+>>> len(f) > 1
+True
 
-# sorted
+>>> my_list = MyList([1, 2], [6, 7])
+Traceback (most recent call last):
+...
+TypeError: list() takes at most 1 argument (2 given)
 
->>>my_list.append(1)
->>>my_list.append(4)
->>>my_list.append(2)
->>>my_list.append(3)
->>>my_list.append(5)
-[1, 2, 3, 4, 5]
+>>> my_list = MyList([1, 2, "hell", 6])
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+TypeError: unorderable types: str() < int()
 
+>>> my_list = MyList([1, 2, (3, 4) , 5])
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+TypeError: unorderable types: tuple() < int()
+
+>>> my_list = MyList([1, 2, [3], 4 , 5])
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+TypeError: unorderable types: list() < int()
