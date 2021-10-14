@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""assume that all the elements of the list will be of type int
+"""yall assume that all the elements of the list will be of type int
 """
 
 
