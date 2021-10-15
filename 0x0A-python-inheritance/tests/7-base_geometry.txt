@@ -2,6 +2,10 @@
 
 >>> bg = BaseGeometry()
 
+>>> print(bg.area())
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
 
 # integer integer
 
