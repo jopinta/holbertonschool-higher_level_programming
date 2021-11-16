@@ -1,2 +1,2 @@
 -- creaytes the database
-CREATE DATABASE database hbtn0_c_0;
+CREATE DATABASE hbtn_0c_0;
