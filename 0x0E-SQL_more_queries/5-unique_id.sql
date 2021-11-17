@@ -1,3 +1,2 @@
 -- using unique constratit
-CREATE TABLE IF NOT EXISTS unique_id (id INT UNIQUE, name VARCHAR(256));
-INSERT INTO id VALUES(1);
+CREATE TABLE IF NOT EXISTS unique_id (id INT UNIQUE DEFAULT 1, name VARCHAR(256));
