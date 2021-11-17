@@ -1,2 +1,3 @@
 --listing privileges
-SHOW GRANTS FOR 'user_0d_2' AND 'user_0d_'@'localhost'
+SHOW GRANTS FOR 'user_0d_1'@'localhost'/g
+SHOW GRANTS FOR 'user_0d_2'@'localhost'/g
