@@ -1,3 +1,3 @@
--- computes the score average of all records
-SELECT COUNT(score) - COUNT(DISTINCT score)
+-- name should be average
+SELECT AVG(score) 'average'
 FROM second_table;
