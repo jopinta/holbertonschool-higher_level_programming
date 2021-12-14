@@ -3,7 +3,7 @@
 const Rectangle = class {
   constructor (width, height) {
     if (width <= 0 || width === undefined || height <= 0 || height === undefined) {
-  return;
+      return;
     }
     this.width = width;
     this.height = height;
