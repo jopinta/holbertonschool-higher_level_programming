@@ -5,10 +5,9 @@ const argv = process.argv;
 const nb = parseInt(argv[2]);
 
 function factorial {
-if (nb === 0 || Number.isNAN(nb)) {
+  if (nb === 0 || Number.isNaN(nb)) {
     return 1;
-}
+  }
 return nb * factorial(nb1);
 }
-
 console.log(factorial(nb));
