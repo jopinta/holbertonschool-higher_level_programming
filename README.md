@@ -1,4 +1,4 @@
-Welcome to the Python world!
+jjWelcome to the Python world!
 
 After 3 months of C, you will start Python today.
 The first projects are more "C-oriented" - no tricks, no funky syntax - simple!
