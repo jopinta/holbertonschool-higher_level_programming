@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+'''testing one'''
+
+import MySQLdb
+import sys
+
+argv = sys.argv
+
+# Create states table in hbtn_0e_0_usa with some data
+# Your code should not be executed when imported para que no se ejecute, cuando llamas un
+if(__name__ == '__main__'):
+
+    conn = MySQLdb.connect(host="localhost", port=3306, user=argv[1], passwd=argv[2], db=argv[3], charset="utf8")
+
+    cur = conn.cursor()
+
+    cur.execute("SELECT cities.name FROM cities JOIN states ON cities.state_id = states.id WHERE states.name LIKE %s", [argv[4]]) # HERE I have to know SQL to grab all states in my database  
+    query_rows = cur.fetchall()
+    lista = []
+    for row in query_rows:
+        lista += row
+    print(", ".join(lista))
+    cur.close()
+    conn.close()
