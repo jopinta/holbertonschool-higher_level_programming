@@ -16,7 +16,7 @@ if(__name__ == '__main__'):
 
     cur = conn.cursor()
 
-    request = ("SELECT * FROM states")  # cur.execute(request)
+    cur.execute("SELECT * FROM states")  # cur.execute(request)
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
