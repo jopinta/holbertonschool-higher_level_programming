@@ -16,9 +16,9 @@ if(__name__ == '__main__'):
 
     cur = conn.cursor()
 
-    cur.execute("SELECT cities.name
-                FROM cities JOIN states
-                ON cities.state_id=states.id
+    cur.execute("SELECT cities.name\
+                FROM cities JOIN states\
+                ON cities.state_id=states.id\
                 WHERE states.name LIKE % s", [argv[4]])
     query_rows = cur.fetchall()
     lista = []
