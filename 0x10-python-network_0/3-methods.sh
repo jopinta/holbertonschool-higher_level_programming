@@ -1,4 +1,4 @@
 #!/bin/bash
 # displays all HTTP methods accepted
-curl -sI "$1" OPTIONS -i
+curl -s -X "$1" OPTIONS -i
 
