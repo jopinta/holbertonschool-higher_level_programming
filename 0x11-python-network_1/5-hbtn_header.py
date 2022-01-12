@@ -6,4 +6,4 @@ import requests
 
 if __name__ == '__main__':
     quest = requests.get(sys.argv[1])
-    print("{}".format(quest.headers.get(X-Request-Id)))
+    print("{}".format(quest.headers.get("X-Request-Id")))
