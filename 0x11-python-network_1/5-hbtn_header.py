@@ -2,8 +2,8 @@
 '''displays the value of the variable X-Request-Id'''
 
 import sys
-import request
+import requests
 
 if __name__ == '__main__':
-    quest = request.get(sys.argv[1])
+    quest = requests.get(sys.argv[1])
     print("{}".format(quest.headers.get(X-Request-Id)))
