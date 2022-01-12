@@ -7,5 +7,5 @@ import sys
 if __name__ == '__main__':
 
     mail = urllib.parse.urlencode({'email': sys.argv[2]}).encode('ascii')
-    with urllib.request.urlopen(sys.argv[1]) as quest:
+    with urllib.request.urlopen(sys.argv[1], mail) as quest:
         print(quest.read().decode('utf-8'))
