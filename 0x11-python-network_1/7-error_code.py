@@ -8,4 +8,4 @@ if __name__ == "__main__":
     if quest.status_code < 400:
         print(quest.text)
     else:
-        print("Error code: {}".format(quest.status_code)
+        print("Error code: {}".format(quest.status_code))
