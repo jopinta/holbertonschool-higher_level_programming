@@ -4,8 +4,8 @@
 import requests
 import sys
 if __name__ == "__main__":
-    quest = requests.get(sys.argv[1])
-    if quest.status_code < 400:
-        print(quest.text)
-    else:
-        print("Error code: {}".format(quest.status_code))
+    quest = get("https://api.github.com/user", auth=(sys.arv[1], sys.argv[2]))
+    try:
+        print(quest.json().get('id'))
+    except:
+        pass
