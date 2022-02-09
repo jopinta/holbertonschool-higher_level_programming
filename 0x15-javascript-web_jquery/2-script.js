@@ -1,3 +1,3 @@
-$("div").on( "click", "button", function( event ) {
-  $(event.delegateTarget ).css( "color", "red");
+$("div").on( "click", function( event ) {
+  $("header").css( "color", "red");
 });
