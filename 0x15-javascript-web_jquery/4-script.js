@@ -1,3 +1,3 @@
-$("div").on( "click", function( event ) {
-  $("header").toggleClass( "red green");
+$('div').on('click', function (event) {
+  $('header').toggleClass('red green');
 });
