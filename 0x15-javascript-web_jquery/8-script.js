@@ -1,7 +1,7 @@
-$(document).ready(function(){
-    $.get('https://swapi-api.hbtn.io/api/people/5/?format=json', function(){
-      const element = data.result;
-      for (let x = 0; i < results.length; i++) {
-	$('div'.text(name);
-  })
-})
+$(document).ready(function () {
+  $.get('https://swapi-api.hbtn.io/api/films/?format=json', function (data, status) {
+    data.results.forEach(obj => {
+      $('UL#list_movies').append('<li>' + obj.title + '</li>');
+    });
+  });
+});
