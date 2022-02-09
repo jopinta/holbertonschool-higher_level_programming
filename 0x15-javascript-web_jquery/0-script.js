@@ -1,1 +1,1 @@
-const cambio = document.getElementById("header).style.color = "red";
+element = document.querySelector("header").style.color = "#FF0000";
