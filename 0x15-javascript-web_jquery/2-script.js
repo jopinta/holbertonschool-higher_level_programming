@@ -1,3 +1,3 @@
-$("div").on( "click", function( event ) {
-  $("header").css( "color", "red");
+$('div').on('click', function (event) {
+  $('header').css('color', 'red');
 });
